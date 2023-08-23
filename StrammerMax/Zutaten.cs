@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace StrammerMax
 {
    
-    public enum Fleisch
+    public enum Fleisch // gibt denn fleisch sorten eine zahl
     {
         Roastbeaf, Salamie, Pute, Speck, Braten 
     }

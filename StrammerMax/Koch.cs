@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 namespace StrammerMax
 {
 
-    class Koch
+    class Koch// Definiere der Klasse Koch
     {
         string name;
         public string Name
         {
-            set { System.Windows.MessageBox.Show("Man kann mich nicht in " + value + " umbenennen."); }
-            get {return name;}
+            set { System.Windows.MessageBox.Show("Man kann mich nicht in " + value + " umbenennen."); }// setzten von name und erstellen einer mesage box
+            get {return name; }// gibt denn wert der in name steht an denn aufrufer der funktion 
         }
         
-        Random geheimnis;
+        Random geheimnis;// Erstellt eine Variable vom typ random
 
         public Koch(string Name) {
             geheimnis = new Random();
@@ -30,8 +30,8 @@ namespace StrammerMax
 
             //Programmieren Sie ein zufälliges Gericht
 
-            random = (UInt16)geheimnis.Next(0, 5);
-            neuesGericht.Fleischsorte = (Fleisch)random;
+            random = (UInt16)geheimnis.Next(0, 5);// generit ein zahl von 0-5
+            neuesGericht.Fleischsorte = (Fleisch)random;// nimmt denn wert der in fleisch für die zahl steht 
 
             random = (UInt16)geheimnis.Next(0, 6);
             neuesGericht.Soßensorte = (Soße)random; 
@@ -39,7 +39,7 @@ namespace StrammerMax
             random = (UInt16)geheimnis.Next(0, 6);
             neuesGericht.Brotsorte = (Brot)random;
 
-            return neuesGericht;
+            return neuesGericht;// gibt das neue gericht zurück
         }
     }
  }

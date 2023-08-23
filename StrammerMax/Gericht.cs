@@ -8,7 +8,7 @@ namespace StrammerMax
 {
     class Gericht
     {
-        public Fleisch Fleischsorte;
+        public Fleisch Fleischsorte;// eine variable vom typen fleisch
         public Soße Soßensorte;
         public Brot Brotsorte;
 

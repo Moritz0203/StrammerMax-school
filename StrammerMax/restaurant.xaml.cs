@@ -34,7 +34,7 @@ namespace StrammerMax
         {
             besterKoch.Name = "Peter";
 
-            speisekarte = new ListBox();
+            speisekarte = new ListBox();//  erstellen der listbox
 
             speisekarte.Width = 357;
             speisekarte.Height = 261;
@@ -43,7 +43,7 @@ namespace StrammerMax
             speisekarte.Margin = new Thickness(10, 37, 0, 0);
 
 
-            this.Gästebereich.Children.Add(speisekarte);
+            this.Gästebereich.Children.Add(speisekarte);// fügt die listbox zum grid
 
             speisekarte.Items.Clear();
             speisekarte.Items.Add(besterKoch.Name + " kocht heute für Sie:");
